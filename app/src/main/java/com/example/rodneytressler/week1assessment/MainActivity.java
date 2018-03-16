@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Button submitButton;
-    private TextView textInput;
+    protected TextView textInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(onClick(), "Android is fun!!!!!!", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Android is fun!!!!!!", Toast.LENGTH_LONG).show();
                 textInput.setText("");
                 startmenu();
             }

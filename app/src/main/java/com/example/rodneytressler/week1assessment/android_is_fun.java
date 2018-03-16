@@ -9,17 +9,17 @@ import android.view.View;
 import android.widget.TextView;
 
 public class android_is_fun extends AppCompatActivity {
-    //private TextView love;
+    private TextView love;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_android_is_fun);
-        //love = findViewById(R.id.love_textview);
+        love = findViewById(R.id.love_textView);
 
     }
     private void nameLove(){
-
+        love.setText( "Loves Android!!!");
     }
 
 }
